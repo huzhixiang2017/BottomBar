@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomBar">
+        <attr name="icon_selected" format="reference"></attr>
+        <attr name="icon_unselected" format="reference"></attr>
+        <attr name="color_selected" format="color"></attr>
+        <attr name="icon_width_default" format="dimension"></attr>
+        <attr name="icon_height_default" format="dimension"></attr>
+    </declare-styleable>
+</resources>

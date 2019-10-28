@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <com.frank.bottombar.AlphaRadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar_size"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.frank.bottombar.AlphaRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="@string/message"
+            android:textColor="@color/light_gray"
+            android:textSize="13sp"
+            app:icon_unselected="@drawable/message"
+            app:color_selected="@color/green"
+            app:icon_selected="@drawable/message_green"
+            app:icon_height_default="25dp"
+            app:icon_width_default="25dp" />
+
+        <com.frank.bottombar.AlphaRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="@string/contact"
+            android:textColor="@color/light_gray"
+            android:textSize="13sp"
+            app:icon_unselected="@drawable/contact"
+            app:color_selected="@color/green"
+            app:icon_selected="@drawable/contact_green"
+            app:icon_height_default="25dp"
+            app:icon_width_default="25dp" />
+
+        <com.frank.bottombar.AlphaRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="@string/discover"
+            android:textColor="@color/light_gray"
+            android:textSize="13sp"
+            app:icon_unselected="@drawable/discover"
+            app:color_selected="@color/green"
+            app:icon_selected="@drawable/discover_green"
+            app:icon_height_default="25dp"
+            app:icon_width_default="25dp" />
+
+        <com.frank.bottombar.AlphaRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="@string/about_me"
+            android:textColor="@color/light_gray"
+            android:textSize="13sp"
+            app:icon_unselected="@drawable/about_me"
+            app:color_selected="@color/green"
+            app:icon_selected="@drawable/about_me_green"
+            app:icon_height_default="25dp"
+            app:icon_width_default="25dp" />
+    </com.frank.bottombar.AlphaRadioGroup>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/radio_group"
+        android:background="@color/divider" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_bar"
+        android:layout_above="@id/line"/>
+
+</RelativeLayout>

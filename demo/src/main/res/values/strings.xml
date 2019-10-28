@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BottomBar</string>
+
+    <string name="message">消息</string>
+    <string name="contact">通讯录</string>
+    <string name="discover">发现</string>
+    <string name="about_me">我的</string>
+
+</resources>
